@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/withdraw_funds_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    tools:context=".ui.main.fragments.WWFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/withdraw_funds_title"
+            android:layout_width="match_parent"
+            android:layout_margin="4dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/khan_background_pl_n"
+            android:fontFamily="@font/semi"
+            android:gravity="center"
+            android:padding="12dp"
+            android:textAlignment="center"
+            android:textColor="@color/white_dark" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="4sp"
+            app:cardElevation="4sp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/withdraw_funds_points"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:textSize="14sp"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:hint="ENTER POINTS TO WITHDRAW"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="12dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardCornerRadius="4sp"
+            app:cardElevation="4sp"
+            >
+
+            <com.skydoves.powerspinner.PowerSpinnerView
+                android:id="@+id/payment_app_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:hint="SELECT WITHDRAW ACCOUNT"
+                android:textAllCaps="true"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorPrimary"
+                android:textColorHint="@color/black"
+                android:background="@color/white"
+                app:spinner_arrow_gravity="end"
+                app:spinner_arrow_tint="@color/colorPrimary"
+                app:spinner_divider_color="@color/colorPrimary"
+                app:spinner_divider_show="true"
+                app:spinner_divider_size="0.4dp"
+                app:spinner_popup_animation="dropdown" />
+        </androidx.cardview.widget.CardView>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/medium"
+            android:text="Enter Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_label_size"
+            android:visibility="gone" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/withdraw_funds_payment_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/medium"
+                android:inputType="number"
+                android:maxLength="10" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/walletButton"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/khan_add"
+                android:padding="14dp"
+                android:text="Add Bank"
+                android:textAllCaps="true"
+                app:strokeColor="@color/colorPrimary" />
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/withdraw_funds_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semi"
+                android:padding="14dp"
+                android:text="WITHDRAW"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/withdraw_history"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content"
+            android:padding="14dp"
+            android:text="Withdraw History"
+            android:textAllCaps="true"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</FrameLayout>

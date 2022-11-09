@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="khansatta.on.satta.app.ui.main.fragments.bids.JodiFragment">
+
+    <TextView
+        android:id="@+id/form_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/main_gradient"
+        android:padding="8dp"
+        android:text="Time Bazar"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/bid_form_padding"
+        app:layout_constraintTop_toBottomOf="@+id/form_title"
+        tools:layout_editor_absoluteX="8dp">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/regular"
+            android:text="Date"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_label_size" />
+
+        <EditText
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/khan_edit_background"
+            android:fontFamily="@font/bold"
+            android:padding="12sp"
+            android:text="2021-07-11 12:00:00"
+            android:textSize="@dimen/input_label_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/bid_digit_input_title"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_label_size" />
+
+        <AutoCompleteTextView
+            android:id="@+id/edit_input_digits"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/khan_edit_background"
+            android:fontFamily="@font/bold"
+            android:inputType="number"
+            android:maxLength="2"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/regular"
+            android:text="@string/bid_points_input_title"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/input_label_size" />
+
+        <EditText
+            android:id="@+id/edit_input_points"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/khan_edit_background"
+            android:fontFamily="@font/bold"
+            android:inputType="number"
+            android:maxLength="5"
+            android:padding="12dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_submit_bet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:padding="14dp"
+            android:text="Submit" />
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bet_status_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="20dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="#1abc9c"
+        app:cardElevation="3sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/bet_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Bet Placed"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

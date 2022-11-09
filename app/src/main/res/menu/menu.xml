@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group
+        android:id="@+id/group_item_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/khan_home"
+            android:iconTint="@null"
+            android:title="Home" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/profile_icon"
+            android:iconTint="@null"
+            android:title="My Profile" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_3"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/walletFragment"
+            android:icon="@drawable/khan_wallet"
+            android:iconTint="@null"
+            android:title="Wallet" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_16"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/addPointsDrawer"
+            android:icon="@drawable/khan_add"
+            android:iconTint="@null"
+            android:title="Add Funds" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_17"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/withdrawFragment"
+            android:icon="@drawable/khan_wallet_icon"
+            android:iconTint="@null"
+            android:title="Wtihdraw Funds" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_6"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/transferPointsFragment"
+            android:icon="@drawable/transfer"
+            android:iconTint="@null"
+            android:title="Transfer Points"
+            android:visible="false" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_7"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/bidHistory"
+            android:icon="@drawable/khan_bid_history"
+            android:iconTint="@null"
+            android:title="Bids History" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_item_8"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/winHistory"
+            android:icon="@drawable/vtrophy"
+            android:iconTint="@null"
+            android:title="Wins History" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_item_9"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/gameRatesFragment"
+            android:icon="@drawable/rates"
+            android:iconTint="@null"
+            android:title="Market Rates" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_item_10"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/instructionsFragment"
+            android:icon="@drawable/question"
+            android:iconTint="@null"
+            android:title="Help and Guide" />
+    </group>
+
+    <group
+        android:id="@+id/group_item_11"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/enquiryFragment"
+            android:icon="@drawable/question"
+            android:iconTint="@null"
+            android:title="Enquiry"
+            android:visible="false" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_item_12"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/shareAppButton"
+            android:icon="@drawable/share"
+            android:iconTint="@null"
+            android:title="Share our App" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_item_13"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/rateUsButton"
+            android:icon="@drawable/star"
+            android:iconTint="@null"
+            android:title="Rate Us" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_item_14"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/changePasswordFragment"
+            android:icon="@drawable/lock"
+            android:iconTint="@null"
+            android:title="Change Password" />
+    </group>
+
+
+    <group
+        android:id="@+id/group_item_15"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/logoutButton"
+            android:icon="@drawable/logout"
+            android:iconTint="@null"
+            android:title="Logout" />
+    </group>
+
+
+</menu>

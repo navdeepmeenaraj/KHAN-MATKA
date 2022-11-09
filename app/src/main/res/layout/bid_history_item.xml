@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    app:cardCornerRadius="8sp"
+    app:cardElevation="1sp"
+    app:cardUseCompatPadding="true"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5sp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tv_market_id"
+                style="@style/TextAppearance.AppCompat.Menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semi"
+                android:padding="@dimen/bid_his_item_padding"
+                android:text="Market ID :"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_bet_date"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/semi"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/bid_his_item_padding"
+                android:text="Bet Date :"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_bet_digit"
+                android:fontFamily="@font/semi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/bid_his_item_padding"
+                android:text="Digit : "
+                android:textAllCaps="false"
+                android:textColor="@color/dark_orange" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_bet_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:fontFamily="@font/semi"
+                android:padding="@dimen/bid_his_item_padding"
+                android:text="Amount : "
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/colorRed" />
+
+            <TextView
+                android:id="@+id/tv_market_session"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/semi"
+                android:layout_gravity="end"
+                android:layout_margin="5dp"
+                android:padding="@dimen/bid_his_item_padding"
+                android:text="Session : "
+                android:textAlignment="textEnd"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

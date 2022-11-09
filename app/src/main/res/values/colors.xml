@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#130f40</color>
+    <color name="colorPrimaryDark">#130f40</color>
+    <color name="colorAccent">#130f40</color>
+
+    <color name="colorGreen">#53d010</color>
+    <color name="colorRed">#fb191a</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="black">#000000</color>
+
+    <color name="golden">#F2CB6C</color>
+
+    <color name="dark_red">#BF0000</color>
+    <color name="dark_orange">#DF4916</color>
+
+    <color name="result_text_color">#e84118</color>
+
+    <color name="white_dark">#f2f2f2</color>
+    <color name="play_button_bg_color">#fdcb6e</color>
+
+    <color name="light_gray">#E8E8E8</color>
+
+
+</resources>

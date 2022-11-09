@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/mainHomeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/mRefreshLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/gali_and_starline"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cardview_image_banner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4sp"
+                            android:orientation="vertical"
+                            app:cardCornerRadius="8sp">
+
+                            <com.denzcoskun.imageslider.ImageSlider
+                                android:id="@+id/image_slider"
+                                android:layout_width="wrap_content"
+                                android:layout_height="160dp"
+                                android:visibility="visible"
+                                app:iss_auto_cycle="true"
+                                app:iss_delay="5"
+                                app:iss_period="800"
+                                app:iss_placeholder="@drawable/khan_placeholder_image"
+                                app:iss_selected_dot="@drawable/default_selected_dot" />
+
+
+                            <com.google.android.material.button.MaterialButton
+                                android:id="@+id/add_points_app_bar"
+                                android:layout_width="40dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="end|bottom|center"
+                                android:backgroundTint="@null"
+                                android:insetLeft="0dp"
+                                android:insetTop="0dp"
+                                android:insetRight="0dp"
+                                android:insetBottom="0dp"
+                                android:visibility="gone"
+                                app:iconGravity="textStart"
+                                app:iconPadding="0dp"
+                                app:iconTint="@null"
+                                app:strokeColor="@color/white"
+                                app:strokeWidth="2dp" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:divider="@drawable/khan_divider_empty"
+                            android:orientation="vertical"
+                            android:padding="8dp"
+                            android:showDividers="middle"
+                            app:layout_constraintTop_toBottomOf="@+id/linearLayout11">
+
+                            <include
+                                android:id="@+id/header_one"
+                                layout="@layout/header_one" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/market_recycler_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/gali_and_starline"
+
+                    android:padding="4dp"
+                    tools:listitem="@layout/item_market_list_2" />
+            </RelativeLayout>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

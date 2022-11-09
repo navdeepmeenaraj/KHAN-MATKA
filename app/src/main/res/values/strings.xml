@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<resources>
+
+    <string name="app_name">Khan Matka</string>
+
+    <string name="login_activity_title">Login or Sign Up</string>
+
+    <string name="star_win_history">Win History</string>
+
+    <string name="star_bid_history">Bid History</string>
+
+    <string name="starline_label">StarLine Games</string>
+
+    <string name="title_activity_home">Home</string>
+
+    <string name="share_app">Hey ! Check this Amazing App and Install Now Here : </string>
+
+    <string name="wallet_note">For any query Message us from the Registered Number Only !</string>
+
+    <string name="password_forgot">Reset Password</string>
+
+    <string name="set_new_password">Set New Password for Your Account !</string>
+
+    <string name="bid_points_input_title">Enter Bid Point</string>
+
+    <string name="bid_digit_input_title">Enter Bid Number</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="from_date">Start Date</string>
+
+    <string name="end_date">End Date</string>
+
+    <string name="customer_name_placeholder">Customer Name</string>
+
+    <string name="mobile_number_placeholder">1234567890</string>
+
+    <string name="mobile_number_label">Mobile Number</string>
+
+    <string name="name_label">Name</string>
+
+    <string name="help_text">Simply download our application from Google Play Store or from our official website. Register with your Mobile Number, Email ID, User Name with our platform. Login with the application using Mobile Number and Password . Select the Game type, select your favourite number and start to Play Game.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

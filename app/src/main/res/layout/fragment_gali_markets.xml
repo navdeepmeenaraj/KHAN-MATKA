@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="4sp"
+    tools:context="khansatta.on.satta.app.ui.main.fragments.gali.GaliMarketsFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_bids_gali"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/sdbutton_gradient_2"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Bid History" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_wins_gali"
+            android:layout_width="150dp"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:background="@drawable/sdbutton_gradient_2"
+            android:text="Win History" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6"
+        tools:layout_editor_absoluteX="4dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        tools:listitem="@layout/gali_market_item"
+        android:id="@+id/gali_rec_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2sp"
+        app:layout_constraintTop_toBottomOf="@+id/progress"
+        tools:layout_editor_absoluteX="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

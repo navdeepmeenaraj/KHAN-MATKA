@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.fragments.EnquiryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:fontFamily="@font/regular"
+                android:text="Name" />
+
+            <EditText
+                android:id="@+id/query_name"
+                android:layout_width="match_parent"
+                android:drawableStart="@drawable/profile_icon"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:drawablePadding="8dp"
+                android:layout_margin="6dp"
+                android:background="@drawable/khan_edit_background"
+                android:fontFamily="@font/regular"
+                android:hint="Enter Your Name"
+                android:inputType="textPersonName"
+                android:maxLength="50"
+                android:padding="12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:fontFamily="@font/regular"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/query_email"
+                android:drawablePadding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/khan_email"
+                android:textSize="14sp"
+                android:layout_margin="6dp"
+                android:background="@drawable/khan_edit_background"
+                android:fontFamily="@font/regular"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:padding="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:fontFamily="@font/regular"
+                android:text="Mobile" />
+
+            <EditText
+                android:id="@+id/query_mobile"
+                android:drawableStart="@drawable/mobile"
+                android:layout_width="match_parent"
+                android:drawablePadding="8dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:textSize="14sp"
+                android:background="@drawable/khan_edit_background"
+                android:fontFamily="@font/regular"
+                android:hint="Enter Your Mobile Number"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="12dp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:fontFamily="@font/regular"
+                android:text="Enquiry" />
+
+            <EditText
+                android:id="@+id/query_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:background="@drawable/khan_edit_background"
+                android:fontFamily="@font/regular"
+                android:hint="Message"
+                android:maxWidth="100dp"
+                android:textSize="14sp"
+                android:inputType="text"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="150dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_send_enquiry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/khan_button_gradients"
+                android:fontFamily="@font/regular"
+                android:text="Submit"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

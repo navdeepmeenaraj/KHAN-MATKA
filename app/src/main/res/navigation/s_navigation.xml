@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/starLineDashboard">
+
+    <fragment
+        android:id="@+id/starLineDashboard"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.StarLineDashboard"
+        android:label="Starline Dashboard"
+        tools:layout="@layout/fragment_star_line_dashboard">
+        <action
+            android:id="@+id/action_starLineDashboard_to_starLineBetHistory"
+            app:destination="@id/starLineBetHistory" />
+        <action
+            android:id="@+id/action_starLineDashboard_to_starLineWinHistory"
+            app:destination="@id/starLineWinHistory" />
+        <action
+            android:id="@+id/action_starLineDashboard_to_starLineMarkets"
+            app:destination="@id/starLineMarkets" />
+
+        <action
+            android:id="@+id/action_starLineDashboard_to_starChartFragment"
+            app:destination="@id/starChartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/starLineMarkets"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.StarLineMarkets"
+        android:label="Starline Markets"
+        tools:layout="@layout/fragment_star_line_markets">
+        <action
+            android:id="@+id/action_starLineMarkets_to_starLineForm"
+            app:destination="@id/starLineForm" />
+    </fragment>
+    <fragment
+        android:id="@+id/starLineForm"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.StarLineForm"
+        android:label="Place Bet"
+        tools:layout="@layout/fragment_star_line_form" />
+    <fragment
+        android:id="@+id/starLineBetHistory"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.StarLineBidHistory"
+        android:label="Starline Bet History"
+        tools:layout="@layout/fragment_star_line_bet_history" />
+    <fragment
+        android:id="@+id/starLineWinHistory"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.StarLineWinHistory"
+        android:label="Starline Win History"
+        tools:layout="@layout/fragment_star_line_win_history" />
+
+    <fragment
+        android:id="@+id/starChartFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.StarChartFragment"
+        android:label="Starline Chart" />
+</navigation>

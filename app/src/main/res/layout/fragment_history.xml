@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#2c2c54"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="khansatta.on.satta.app.ui.main.fragments.HistoryFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_bet_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_win_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="60dp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="5dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_bet_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            android:padding="12dp"
+            android:paddingStart="40dp"
+            app:strokeColor="@color/white"
+            app:cornerRadius="50dp"
+            app:strokeWidth="2dp"
+            android:paddingEnd="40dp"
+            android:text="Bid History"
+            app:icon="@drawable/khan_ic_bill"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/button_win_history" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_win_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/medium"
+            android:gravity="center"
+            app:strokeColor="@color/white"
+            app:cornerRadius="50dp"
+            app:strokeWidth="2dp"
+            android:padding="12dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Win History"
+            app:icon="@drawable/khan_ic_trophy"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_bet_history"
+        tools:layout_editor_absoluteX="5dp">
+
+        <EditText
+            android:id="@+id/editTextDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

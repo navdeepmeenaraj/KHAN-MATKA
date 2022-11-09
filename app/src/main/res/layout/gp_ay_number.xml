@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/khan_gpay" />
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Enter Google Pay Number"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/gpay_number_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/khan_edit_background"
+        android:focusedByDefault="true"
+        android:textStyle="bold"
+        android:hint="Google Pay Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="16dp" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_gpay_button"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/khan_gradient"
+        android:padding="@dimen/bet_submit_button_padding"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.fragments.wallut.PFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/khan_btnbackground">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/paytm" />
+
+    </FrameLayout>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_text_paytm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:fontFamily="@font/medium"
+        android:background="@drawable/khan_edit_background"
+        android:hint="Enter Paytm Number"
+        android:inputType="number"
+        android:maxLength="10"
+        android:padding="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit_paytm"
+        android:background="@drawable/market_bg"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:fontFamily="@font/medium"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:padding="14dp"
+        android:text="Submit"
+        app:cornerRadius="12dp" />
+
+</LinearLayout>

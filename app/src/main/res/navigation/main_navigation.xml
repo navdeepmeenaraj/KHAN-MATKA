@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.HomeFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim" />
+        <action
+            android:id="@+id/action_homeFragment_to_chartFragment"
+            app:destination="@id/chartFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_galiMarketsFragment"
+            app:destination="@id/galiMarketsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/historyFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.HistoryFragment"
+        android:label="Bid and Win History"
+        tools:layout="@layout/fragment_history">
+        <action
+            android:id="@+id/action_historyFragment_to_bidHistory"
+            app:destination="@id/bidHistory" />
+        <action
+            android:id="@+id/action_historyFragment_to_winHistory"
+            app:destination="@id/winHistory" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.ProfileFragment"
+        android:label="User Profile"
+        tools:layout="@layout/fragment_profile">
+        <action
+            android:id="@+id/action_profileFragment_to_resultsFragment"
+            app:destination="@id/historyFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim" />
+        <action
+            android:id="@+id/action_profileFragment_to_walletTransactionFragment"
+            app:destination="@id/walletTransactionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/betTypeFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.BidTypeFragment"
+        android:label="Choose Market"
+        tools:layout="@layout/fragment_bid_type">
+        <action
+            android:id="@+id/action_betTypeFragment_to_jodiFragment"
+            app:destination="@id/jodiFragment" />
+        <action
+            android:id="@+id/action_betTypeFragment_to_halfSangamFragment"
+            app:destination="@id/halfSangamFragment" />
+        <action
+            android:id="@+id/action_betTypeFragment_to_fullSangamFragment"
+            app:destination="@id/fullSangamFragment" />
+        <action
+            android:id="@+id/action_betTypeFragment_to_singleFragment"
+            app:destination="@id/singleFragment" />
+        <action
+            android:id="@+id/action_betTypeFragment_to_singlePanelFragment"
+            app:destination="@id/singlePanelFragment" />
+        <action
+            android:id="@+id/action_betTypeFragment_to_doublePanelFragment"
+            app:destination="@id/doublePanelFragment" />
+        <action
+            android:id="@+id/action_betTypeFragment_to_triplePanelFragment"
+            app:destination="@id/triplePanelFragment"
+            app:enterAnim="@android:anim/fade_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/jodiFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.bids.JodiFragment"
+        android:label="Jodi Digit">
+        <action
+            android:id="@+id/action_jodiFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/halfSangamFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.bids.HalfSangamFragment"
+        android:label="Half Sangam"
+        tools:layout="@layout/fragment_half_sangam">
+        <action
+            android:id="@+id/action_halfSangamFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fullSangamFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.bids.FullSangamFragment"
+        android:label="Full Sangam"
+        tools:layout="@layout/fragment_full_sangam">
+        <action
+            android:id="@+id/action_fullSangamFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/chartFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.ChartFragment"
+        android:label="Market Chart"
+        tools:layout="@layout/fragment_chart" />
+    <fragment
+        android:id="@+id/galiMarketsFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.gali.GaliMarketsFragment"
+        android:label="Gali Markets"
+        tools:layout="@layout/fragment_gali_markets">
+        <action
+            android:id="@+id/action_galiMarketsFragment_to_galiPlaceForm"
+            app:destination="@id/galiPlaceForm" />
+        <action
+            android:id="@+id/action_galiMarketsFragment_to_galiBids"
+            app:destination="@id/galiBids" />
+        <action
+            android:id="@+id/action_galiMarketsFragment_to_galiWins"
+            app:destination="@id/galiWins" />
+    </fragment>
+    <fragment
+        android:id="@+id/galiPlaceForm"
+        android:name="khansatta.on.satta.app.ui.main.fragments.gali.GaliPlaceForm"
+        android:label="Place Bid"
+        tools:layout="@layout/fragment_gali_place_form" />
+    <fragment
+        android:id="@+id/galiBids"
+        android:name="khansatta.on.satta.app.ui.main.fragments.gali.GaliBids"
+        android:label="Bid History"
+        tools:layout="@layout/fragment_gali_bids" />
+    <fragment
+        android:id="@+id/galiWins"
+        android:name="khansatta.on.satta.app.ui.main.fragments.gali.GaliWins"
+        android:label="Win History"
+        tools:layout="@layout/fragment_gali_wins" />
+    <fragment
+        android:id="@+id/singleFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.bids.SingleFragment"
+        android:label="Single Digit">
+        <action
+            android:id="@+id/action_singleFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/singlePanelFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.bids.SinglePanelFragment"
+        android:label="Single Pana">
+        <action
+            android:id="@+id/action_singlePanelFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/doublePanelFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.bids.DoublePanelFragment"
+        android:label="Double Pana">
+        <action
+            android:id="@+id/action_doublePanelFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/triplePanelFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.bids.TriplePanelFragment"
+        android:label="Triple Pana">
+        <action
+            android:id="@+id/action_triplePanelFragment_to_betTypeFragment"
+            app:destination="@id/betTypeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bidHistory"
+        android:name="khansatta.on.satta.app.ui.main.fragments.history.BidHistory"
+        android:label="Bid History"
+        tools:layout="@layout/fragment_win_history">
+        <action
+            android:id="@+id/action_bidHistory_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/winHistory"
+        android:name="khansatta.on.satta.app.ui.main.fragments.history.WinHistory"
+        android:label="Win History">
+        <action
+            android:id="@+id/action_winHistory_to_historyFragment"
+            app:destination="@id/historyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameRatesFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.GameRatesFragment"
+        android:label="Game Rates" />
+    <fragment
+        android:id="@+id/instructionsFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.InstructionsFragment"
+        android:label="Help and Guide"
+        tools:layout="@layout/fragment_instructions" />
+    <fragment
+        android:id="@+id/walletTransactionFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.wallut.WTFragment"
+        android:label="Wallet History">
+        <action
+            android:id="@+id/action_walletTransactionFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/withdrawFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.WWFragment"
+        android:label="Withdraw Points"
+        tools:layout="@layout/fragment_wit_hd_raw">
+        <action
+            android:id="@+id/action_withdrawFragment_to_fragmentWithdrawRequest"
+            app:destination="@id/fragmentWithdrawRequest" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPaymentMethods"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.FragmentPUYMethods"
+        android:label="Withdrawal Methods"
+        tools:layout="@layout/fragment_pa_ym_ent_methods" />
+    <fragment
+        android:id="@+id/fragmentWithdrawRequest"
+        android:name="khansatta.on.satta.app.ui.main.fragments.starline.FragmentWUTHRequest"
+        android:label="Withdraw Requests"
+        tools:layout="@layout/fragment_wit_hdr_aw_request">
+        <action
+            android:id="@+id/action_fragmentWithdrawRequest_to_withdrawFragment"
+            app:destination="@id/withdrawFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paytmFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.wallut.PFragment"
+        android:label="PayTM Upi"
+        tools:layout="@layout/fragment_pay_tm" />
+    <fragment
+        android:id="@+id/phonepayFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.PPFragment"
+        android:label="PhonePay Upi"
+        tools:layout="@layout/fragment_pho_ne_pa" />
+    <fragment
+        android:id="@+id/gpayFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.GFragment"
+        android:label="GPay Upi"
+        tools:layout="@layout/fragment_g_p_ay" />
+    <fragment
+        android:id="@+id/transferPointsFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.TransferPointsFragment"
+        android:label="Transfer Points"
+        tools:layout="@layout/fragment_transfer_points" />
+    <fragment
+        android:id="@+id/enquiryFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.EnquiryFragment"
+        android:label="Message"
+        tools:layout="@layout/fragment_enquiry" />
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.auth.ChangePasswordFragment"
+        android:label="Change Password"
+        tools:layout="@layout/fragment_change_password" />
+    <fragment
+        android:id="@+id/dpBossFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.DpBossFragment"
+        android:label="Dp Boss" />
+    <fragment
+        android:id="@+id/walletFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.wallut.WalletFragment"
+        android:label="Wallet"
+        tools:layout="@layout/fragment_wallet_new" />
+    <fragment
+        android:id="@+id/galiChartFragment"
+        android:name="khansatta.on.satta.app.ui.main.fragments.gali.GaliChartFragment"
+        android:label="Chart"
+        tools:layout="@layout/fragment_gali_chart" />
+
+
+</navigation>
